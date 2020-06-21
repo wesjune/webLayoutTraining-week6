@@ -1,10 +1,53 @@
----
-title: Craftsman
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Craftsman</title>
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="assets/style/main.css">
+
+  <!-- <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png"> -->
+
+  <script src="assets/js/vendors.js"></script>
+  <script src="assets/js/all.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg py-3 py-lg-5 px-0">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="material-icons text-white">dehaze</i>
+        </button>
+
+        <a class="navbar-brand p-1 ml-n1" href="index.html">Craftsman</a>
+
+        <a class="material-icons nav-link order-lg-3 p-1 p-lg-2 mr-lg-n2" href="#">shopping_cart</a>
+
+        <div id="navbarNav" class="collapse navbar-collapse justify-content-end mr-8">
+          <ul class="navbar-nav">
+            <li class="nav-item mr-8">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item mr-8">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  
 <main class="index">
   <section class="banner container-fluid mb-10 mb-lg-13">
     <div class="banner__image bg-cover">
@@ -187,3 +230,18 @@ current: index
     $(".nav-link").css("color", "#fff");
   });
 </script>
+
+  <footer class="footer container-fluid">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-lg-center py-6 py-lg-8 px-0">
+      <a class="navbar-brand p-1 ml-n1 mb-10 mb-lg-0 text-white" href="index.html">Craftsman</a>
+
+      <a href="javascript:;" class="order-lg-3 text-white font-sm mb-4 mb-lg-0 mr-lg-10">Purchase Policy</a>
+      <a href="javascript:;" class="order-lg-3 text-white font-sm mb-4 mb-lg-0 mr-lg-10">Privacy Policy</a>
+      <a href="javascript:;" class="order-lg-3 text-white font-sm">Terms & Conditions</a>
+
+      <p class="order-lg-2 mt-10 mt-lg-0 mr-lg-auto text-white-60 font-sm">© 2020. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
